@@ -16,9 +16,27 @@ nav li {
 
 nav ul a {
     text-decoration: none;
+    color: rgb(6, 244, 192);
+    
+}
+
+nav ul a:hover {
     color: white;
 }
 
 section ul {
     color: white;
+}
+
+h1 {
+    color: rgb(255, 196, 0);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
 }

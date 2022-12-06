@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Blog() {
     const [articles, setArticles] = useState([]);
@@ -22,11 +23,18 @@ export default function Blog() {
             <h1>Blog Page</h1>
             <p>berikut tulisan-tulisan yang aku buat ketika aku sedang sedih : </p>
 
-            {loading ? <i> tunggu ya sist</i> : <div>
+            {loading ? <i> tunggu ya sist..</i> : <div>
             <p>-- eh tapi bohong hehe..</p>
             <ul>
             {articles.map(function(article) {
-                return <li key={article.id}> {article.title}</li>
+                return <article key={article.id}>
+                    <li> 
+                        <p>
+                            <Link to={`/blog/${article.id}`}>{article.title}</Link>
+                        </p>
+                        <i>{new Date(article.publishedAt).toLocaleDateString()}</i>
+                    </li>
+                </article>
             })}
             </ul>
                 </div> }
