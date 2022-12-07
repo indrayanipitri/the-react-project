@@ -32,8 +32,8 @@ export default function BlogDetail() {
 
            {loading ? <i>Tunggu ya sist...</i> : 
             <article key={article.id}>
-            <h2 className="section-title">{article.title}</h2>
-            <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
+            <h2 className="article">{article.title}</h2>
+            <time className='article-time'>{new Date(article.publishedAt).toLocaleDateString()}</time>
             <div className="section-description">
                 <p> Source: {' '}
                 <a href={article.url}>{article.newsSite}</a>

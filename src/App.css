@@ -60,18 +60,32 @@
     font-size: 16px;
 }
 
-
-
 .section-description a {
     color: white;
     text-decoration: none;
 }
 
 .section-description a:hover {
-    color: rgb(255, 188, 2);;
+    color: rgb(207, 191, 17);
 }
 
 .section-description img {
     width: 260px;
     height: 190px;
+}
+
+.article-title {
+    margin-bottom: 0;
+}
+
+.article-time {
+    color: rgb(185, 185, 185);
+    margin: 0;
+    
+}
+
+.article {
+    margin-top: 0;
+    font-size: 20px;
+    color: rgb(207, 191, 17);
 }

@@ -30,10 +30,10 @@ export default function Blog() {
                     {articles.map(function(article) {
                         return <article key={article.id}>
                             <li> 
-                                <p>
+                                <p className='article-title'>
                                     <Link to={`/blog/${article.id}`}>{article.title}</Link>
                                 </p>
-                                <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
+                                <time className='article-time'>{new Date(article.publishedAt).toLocaleDateString()}</time>
                                 
                             </li>
                         </article>
