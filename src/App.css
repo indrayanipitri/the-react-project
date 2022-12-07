@@ -1,56 +1,77 @@
-body {
-    margin: 30px;
-    line-height: 30px;
+
+
+/* ----- */
+.App {
+    width: 315px;
+    margin: 0 auto;
+    background-color: rgb(33, 33, 33);
+    min-height: 100vh;
+    border: 1px solid rgb(53, 53, 53);
 }
 
-nav {
-    margin-bottom: 20px;
+.brand {
+    text-align: center;
+    font-size: 24px;
+    padding: 5px 0;
+    
+   
 }
 
-nav ul {
-    list-style: none;
+.nav {
+    border-top: 1px solid rgb(255, 133, 2);
+    border-bottom: 1px solid rgb(255, 133, 2);
+    display: flex;
+}
+
+.nav-item {
+    display: inline-block;
+    flex: 1 auto;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.nav-item:not(:last-child) {
+    border-right: 1px solid rgb(255, 166, 2);
+}
+
+.nav-item:hover {
+    color: rgb(255, 188, 2);
+}
+
+.section {
+    padding: 30px;
+}
+
+.section i {
+    color: rgb(236, 244, 6);;
+}
+
+.section-title {
     margin: 0;
-    padding: 0;
+    font-size: 22px;
+    color: rgb(255, 166, 2);
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-
-nav ul a {
-    text-decoration: none;
-    color: rgb(6, 244, 192);
-    
+.section-description {
+    line-height: 27px;
+    font-size: 16px;
 }
 
-nav ul a:hover {
-    color: white;
-}
 
-section ul {
-    color: white;
-}
 
-h1 {
-    color: rgb(255, 196, 0);
-}
-
-a {
+.section-description a {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
-    color: yellow;
+.section-description a:hover {
+    color: rgb(255, 188, 2);;
 }
 
-img {
-    width: 400px;
-    height: auto;
-    
-}
-
-i {
-    color: rgb(0, 255, 30);
+.section-description img {
+    width: 260px;
+    height: 190px;
 }

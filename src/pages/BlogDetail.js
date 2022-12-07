@@ -28,16 +28,19 @@ export default function BlogDetail() {
     }
 
     return (
-        <section>
+        <section className="section">
+
            {loading ? <i>Tunggu ya sist...</i> : 
             <article key={article.id}>
-            <h2>{article.title}</h2>
+            <h2 className="section-title">{article.title}</h2>
             <time>{new Date(article.publishedAt).toLocaleDateString()}</time>
-            <p> Source: {' '}
-            <a href={article.url}>{article.newsSite}</a>
-            </p>
-            <img src={article.imageUrl} alt={article.title}/>
-            <p>{article.summary}</p>
+            <div className="section-description">
+                <p> Source: {' '}
+                <a href={article.url}>{article.newsSite}</a>
+                </p>
+                <img src={article.imageUrl} alt={article.title}/>
+                <p>{article.summary}</p>
+            </div>
             
         </article>}
            
