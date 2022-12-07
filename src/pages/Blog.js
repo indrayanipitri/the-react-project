@@ -6,6 +6,7 @@ export default function Blog() {
     const [loading, setLoading] = useState(true);
 
     useEffect(function() {
+       document.title = "Blog"
        async function getArticles() {
             const request = await fetch('https://api.spaceflightnewsapi.net/v3/articles')
 
